@@ -1,0 +1,23 @@
+{
+    "name": "Digibyte price extension",
+    "author": "Harold Villalobos",
+    "description": "A simple extension providing current exchange rates for Digibyte",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": [                
+                "popup.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Digibyte Price Extension"
+    },
+    "icons": {
+       "192": "icon-192x192.png" 
+    },    
+    "permissions": ["<all_urls>"]
+}
